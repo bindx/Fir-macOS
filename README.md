@@ -12,7 +12,7 @@
 
 ![](doc/screenshot.png)
 
-### [点我下载DMG](Fir-macOS.dmg)
+### [右击保存下载DMG](Fir-macOS.dmg)
 
 > 如果你喜欢   可以微信扫一扫来个捐助
 
