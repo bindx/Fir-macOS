@@ -1,0 +1,41 @@
+PODS:
+  - AFNetworking (2.3.1):
+    - AFNetworking/NSURLConnection (= 2.3.1)
+    - AFNetworking/NSURLSession (= 2.3.1)
+    - AFNetworking/Reachability (= 2.3.1)
+    - AFNetworking/Security (= 2.3.1)
+    - AFNetworking/Serialization (= 2.3.1)
+    - AFNetworking/UIKit (= 2.3.1)
+  - AFNetworking/NSURLConnection (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.3.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.3.1)
+  - AFNetworking/Security (2.3.1)
+  - AFNetworking/Serialization (2.3.1)
+  - libqrencode (3.4.2)
+  - MJExtension (3.0.10)
+  - objective-zip (1.0.2)
+  - PVAsyncImageView (0.0.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.3.1)
+  - libqrencode
+  - MJExtension
+  - objective-zip
+  - PVAsyncImageView
+
+SPEC CHECKSUMS:
+  AFNetworking: 05b9f6e3aa5ac45bc383b4bb108ef338080a26c7
+  libqrencode: 43dc34b89af83ea4b07c409cd8e09c87aa3a1c9f
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  objective-zip: b78d235d234546105e118d35ae24a69feba08d44
+  PVAsyncImageView: ea93deb554d726a2255b5fa472560dbbcfadf9ab
+
+PODFILE CHECKSUM: 74cb1fd73e58c91f1864e0b3a29b665cf52d9902
+
+COCOAPODS: 1.0.0

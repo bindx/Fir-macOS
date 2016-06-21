@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		234787842019DA9D49952FDC /* libPods-Fir-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D1F8DAA2B7C8096EF995CD /* libPods-Fir-OSX.a */; };
+		A91EE39F1D184C0F0071D6A9 /* FRUploadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A91EE39E1D184C0F0071D6A9 /* FRUploadFile.m */; };
+		A92C6B161D17CEB400974880 /* FRDonateAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A92C6B141D17CEB400974880 /* FRDonateAlert.m */; };
+		A92C6B171D17CEB400974880 /* FRDonateAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92C6B151D17CEB400974880 /* FRDonateAlert.xib */; };
+		A942A4701D170F7600E54A12 /* tools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A942A46F1D170F7600E54A12 /* tools.bundle */; };
+		A94CA5C61D13F7D000DA403C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CA5C51D13F7D000DA403C /* AppDelegate.m */; };
+		A94CA5C91D13F7D000DA403C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CA5C81D13F7D000DA403C /* main.m */; };
+		A94CA5CB1D13F7D000DA403C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94CA5CA1D13F7D000DA403C /* Assets.xcassets */; };
+		A94CA5CE1D13F7D000DA403C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94CA5CC1D13F7D000DA403C /* MainMenu.xib */; };
+		A94CA5D81D14199700DA403C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CA5D71D14199700DA403C /* MBProgressHUD.m */; };
+		A94CA5DC1D1419C700DA403C /* FRAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CA5DB1D1419C700DA403C /* FRAPI.m */; };
+		A94CA5E01D14232800DA403C /* FRAPI+APP.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CA5DF1D14232800DA403C /* FRAPI+APP.m */; };
+		A94CA5E41D142DCF00DA403C /* FRDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CA5E31D142DCF00DA403C /* FRDragView.m */; };
+		A96016B01D191C1600D57194 /* FRUserManagerAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A96016AF1D191C1600D57194 /* FRUserManagerAlert.m */; };
+		A96016B21D191C2C00D57194 /* FRUserManagerAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96016B11D191C2C00D57194 /* FRUserManagerAlert.xib */; };
+		A96016CA1D191F2F00D57194 /* FRAppListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96016C91D191F2F00D57194 /* FRAppListCell.m */; };
+		A96016CC1D191F7F00D57194 /* FRAppListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96016CB1D191F7F00D57194 /* FRAppListCell.xib */; };
+		A96016CF1D1921F600D57194 /* FRMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = A96016CE1D1921F600D57194 /* FRMainWindow.m */; };
+		A96017441D195E3800D57194 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A960173A1D195E3800D57194 /* QRCodeGenerator.m */; };
+		A96017511D19670E00D57194 /* FRAppQRCodeAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A96017501D19670E00D57194 /* FRAppQRCodeAlert.m */; };
+		A96017531D19671C00D57194 /* FRAppQRCodeAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96017521D19671C00D57194 /* FRAppQRCodeAlert.xib */; };
+		A96017561D196B3300D57194 /* FRBaseAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A96017551D196B3300D57194 /* FRBaseAlert.m */; };
+		A96017591D198D2D00D57194 /* FRNewUserAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = A96017581D198D2D00D57194 /* FRNewUserAlert.m */; };
+		A960175B1D198D3A00D57194 /* FRNewUserAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = A960175A1D198D3A00D57194 /* FRNewUserAlert.xib */; };
+		A96017611D1995EF00D57194 /* NSString+Trim.m in Sources */ = {isa = PBXBuildFile; fileRef = A96017601D1995EF00D57194 /* NSString+Trim.m */; };
+		A96017641D199AA600D57194 /* FRUserListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A96017631D199AA600D57194 /* FRUserListCell.m */; };
+		A96017661D199AAF00D57194 /* FRUserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96017651D199AAF00D57194 /* FRUserListCell.xib */; };
+		A9910B241D18070A00DE9652 /* FRApp.m in Sources */ = {isa = PBXBuildFile; fileRef = A9910B231D18070A00DE9652 /* FRApp.m */; };
+		A9910B271D181D6C00DE9652 /* FRCert.m in Sources */ = {isa = PBXBuildFile; fileRef = A9910B261D181D6C00DE9652 /* FRCert.m */; };
+		A9A84BDD1D1537D900EB85CD /* FRUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A84BDC1D1537D900EB85CD /* FRUserManager.m */; };
+		A9A84C051D154D8A00EB85CD /* STAndroidPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A84C001D154D8A00EB85CD /* STAndroidPackage.m */; };
+		A9A84C061D154D8A00EB85CD /* STIosPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A84C021D154D8A00EB85CD /* STIosPackage.m */; };
+		A9A84C091D155E1300EB85CD /* FRToast.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A84C081D155E1300EB85CD /* FRToast.m */; };
+		A9A84C111D1562EF00EB85CD /* FRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A84C101D1562EF00EB85CD /* FRUser.m */; };
+		A9A84C141D1572D500EB85CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9A84C161D1572D500EB85CD /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76D1F8DAA2B7C8096EF995CD /* libPods-Fir-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fir-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30DEBD14E89E862186C84FB /* Pods-Fir-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fir-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fir-OSX/Pods-Fir-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		A91EE39D1D184C0F0071D6A9 /* FRUploadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUploadFile.h; sourceTree = "<group>"; };
+		A91EE39E1D184C0F0071D6A9 /* FRUploadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUploadFile.m; sourceTree = "<group>"; };
+		A92C6B131D17CEB400974880 /* FRDonateAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDonateAlert.h; sourceTree = "<group>"; };
+		A92C6B141D17CEB400974880 /* FRDonateAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDonateAlert.m; sourceTree = "<group>"; };
+		A92C6B151D17CEB400974880 /* FRDonateAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRDonateAlert.xib; sourceTree = "<group>"; };
+		A942A46F1D170F7600E54A12 /* tools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = tools.bundle; sourceTree = "<group>"; };
+		A94CA5C11D13F7D000DA403C /* Fir-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fir-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94CA5C41D13F7D000DA403C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A94CA5C51D13F7D000DA403C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A94CA5C81D13F7D000DA403C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A94CA5CA1D13F7D000DA403C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A94CA5CD1D13F7D000DA403C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A94CA5CF1D13F7D000DA403C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94CA5D61D14199700DA403C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A94CA5D71D14199700DA403C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A94CA5DA1D1419C700DA403C /* FRAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAPI.h; sourceTree = "<group>"; };
+		A94CA5DB1D1419C700DA403C /* FRAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRAPI.m; sourceTree = "<group>"; };
+		A94CA5DD1D141A0100DA403C /* Fir-OSX-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fir-OSX-PrefixHeader.pch"; sourceTree = "<group>"; };
+		A94CA5DE1D14232800DA403C /* FRAPI+APP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FRAPI+APP.h"; sourceTree = "<group>"; };
+		A94CA5DF1D14232800DA403C /* FRAPI+APP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FRAPI+APP.m"; sourceTree = "<group>"; };
+		A94CA5E21D142DCF00DA403C /* FRDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDragView.h; sourceTree = "<group>"; };
+		A94CA5E31D142DCF00DA403C /* FRDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDragView.m; sourceTree = "<group>"; };
+		A96016AE1D191C1600D57194 /* FRUserManagerAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUserManagerAlert.h; sourceTree = "<group>"; };
+		A96016AF1D191C1600D57194 /* FRUserManagerAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUserManagerAlert.m; sourceTree = "<group>"; };
+		A96016B11D191C2C00D57194 /* FRUserManagerAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRUserManagerAlert.xib; sourceTree = "<group>"; };
+		A96016C81D191F2F00D57194 /* FRAppListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAppListCell.h; sourceTree = "<group>"; };
+		A96016C91D191F2F00D57194 /* FRAppListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRAppListCell.m; sourceTree = "<group>"; };
+		A96016CB1D191F7F00D57194 /* FRAppListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRAppListCell.xib; sourceTree = "<group>"; };
+		A96016CD1D1921F600D57194 /* FRMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMainWindow.h; sourceTree = "<group>"; };
+		A96016CE1D1921F600D57194 /* FRMainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMainWindow.m; sourceTree = "<group>"; };
+		A96017391D195E3800D57194 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		A960173A1D195E3800D57194 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		A96017451D19649F00D57194 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A96017471D1964A400D57194 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A96017491D1964A700D57194 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A960174B1D1964AB00D57194 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A960174D1D1964B100D57194 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A960174F1D19670E00D57194 /* FRAppQRCodeAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAppQRCodeAlert.h; sourceTree = "<group>"; };
+		A96017501D19670E00D57194 /* FRAppQRCodeAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRAppQRCodeAlert.m; sourceTree = "<group>"; };
+		A96017521D19671C00D57194 /* FRAppQRCodeAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRAppQRCodeAlert.xib; sourceTree = "<group>"; };
+		A96017541D196B3300D57194 /* FRBaseAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRBaseAlert.h; sourceTree = "<group>"; };
+		A96017551D196B3300D57194 /* FRBaseAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRBaseAlert.m; sourceTree = "<group>"; };
+		A96017571D198D2D00D57194 /* FRNewUserAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNewUserAlert.h; sourceTree = "<group>"; };
+		A96017581D198D2D00D57194 /* FRNewUserAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRNewUserAlert.m; sourceTree = "<group>"; };
+		A960175A1D198D3A00D57194 /* FRNewUserAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRNewUserAlert.xib; sourceTree = "<group>"; };
+		A960175F1D1995EF00D57194 /* NSString+Trim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trim.h"; sourceTree = "<group>"; };
+		A96017601D1995EF00D57194 /* NSString+Trim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trim.m"; sourceTree = "<group>"; };
+		A96017621D199AA600D57194 /* FRUserListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUserListCell.h; sourceTree = "<group>"; };
+		A96017631D199AA600D57194 /* FRUserListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUserListCell.m; sourceTree = "<group>"; };
+		A96017651D199AAF00D57194 /* FRUserListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRUserListCell.xib; sourceTree = "<group>"; };
+		A9910B221D18070A00DE9652 /* FRApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRApp.h; sourceTree = "<group>"; };
+		A9910B231D18070A00DE9652 /* FRApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRApp.m; sourceTree = "<group>"; };
+		A9910B251D181D6C00DE9652 /* FRCert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCert.h; sourceTree = "<group>"; };
+		A9910B261D181D6C00DE9652 /* FRCert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCert.m; sourceTree = "<group>"; };
+		A9A84BDB1D1537D900EB85CD /* FRUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUserManager.h; sourceTree = "<group>"; };
+		A9A84BDC1D1537D900EB85CD /* FRUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUserManager.m; sourceTree = "<group>"; };
+		A9A84BFF1D154D8A00EB85CD /* STAndroidPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAndroidPackage.h; sourceTree = "<group>"; };
+		A9A84C001D154D8A00EB85CD /* STAndroidPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAndroidPackage.m; sourceTree = "<group>"; };
+		A9A84C011D154D8A00EB85CD /* STIosPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STIosPackage.h; sourceTree = "<group>"; };
+		A9A84C021D154D8A00EB85CD /* STIosPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STIosPackage.m; sourceTree = "<group>"; };
+		A9A84C071D155E1300EB85CD /* FRToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRToast.h; sourceTree = "<group>"; };
+		A9A84C081D155E1300EB85CD /* FRToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRToast.m; sourceTree = "<group>"; };
+		A9A84C0F1D1562EF00EB85CD /* FRUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRUser.h; sourceTree = "<group>"; };
+		A9A84C101D1562EF00EB85CD /* FRUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRUser.m; sourceTree = "<group>"; };
+		A9A84C151D1572D500EB85CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9A84C171D1572D700EB85CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9A84C181D1572E100EB85CD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		A9A84C191D1572E100EB85CD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B61583E8A99A830134A37F13 /* Pods-Fir-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fir-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fir-OSX/Pods-Fir-OSX.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A94CA5BE1D13F7D000DA403C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234787842019DA9D49952FDC /* libPods-Fir-OSX.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E58DBD72ACA547412A587CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A30DEBD14E89E862186C84FB /* Pods-Fir-OSX.debug.xcconfig */,
+				B61583E8A99A830134A37F13 /* Pods-Fir-OSX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A92C6B121D17CEB400974880 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				A96017541D196B3300D57194 /* FRBaseAlert.h */,
+				A96017551D196B3300D57194 /* FRBaseAlert.m */,
+				A92C6B131D17CEB400974880 /* FRDonateAlert.h */,
+				A92C6B141D17CEB400974880 /* FRDonateAlert.m */,
+				A92C6B151D17CEB400974880 /* FRDonateAlert.xib */,
+				A96016AE1D191C1600D57194 /* FRUserManagerAlert.h */,
+				A96016AF1D191C1600D57194 /* FRUserManagerAlert.m */,
+				A96016B11D191C2C00D57194 /* FRUserManagerAlert.xib */,
+				A960174F1D19670E00D57194 /* FRAppQRCodeAlert.h */,
+				A96017501D19670E00D57194 /* FRAppQRCodeAlert.m */,
+				A96017521D19671C00D57194 /* FRAppQRCodeAlert.xib */,
+				A96017571D198D2D00D57194 /* FRNewUserAlert.h */,
+				A96017581D198D2D00D57194 /* FRNewUserAlert.m */,
+				A960175A1D198D3A00D57194 /* FRNewUserAlert.xib */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		A94CA5B81D13F7D000DA403C = {
+			isa = PBXGroup;
+			children = (
+				A94CA5C31D13F7D000DA403C /* Fir-OSX */,
+				A94CA5C21D13F7D000DA403C /* Products */,
+				2E58DBD72ACA547412A587CA /* Pods */,
+				D0487CB2F53E181281F16585 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A94CA5C21D13F7D000DA403C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A94CA5C11D13F7D000DA403C /* Fir-OSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A94CA5C31D13F7D000DA403C /* Fir-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				A96017221D195E1800D57194 /* Utils */,
+				A92C6B121D17CEB400974880 /* Alert */,
+				A9A84C0B1D15623500EB85CD /* Model */,
+				A9A84BDE1D153BAA00EB85CD /* Analyse */,
+				A9A84BDA1D1537BA00EB85CD /* Manager */,
+				A94CA5E11D142DB300DA403C /* Widget */,
+				A94CA5D91D1419B500DA403C /* API */,
+				A94CA5D51D14199700DA403C /* MBProgressHUD */,
+				A94CA5C41D13F7D000DA403C /* AppDelegate.h */,
+				A94CA5C51D13F7D000DA403C /* AppDelegate.m */,
+				A96016CD1D1921F600D57194 /* FRMainWindow.h */,
+				A96016CE1D1921F600D57194 /* FRMainWindow.m */,
+				A94CA5CA1D13F7D000DA403C /* Assets.xcassets */,
+				A94CA5CC1D13F7D000DA403C /* MainMenu.xib */,
+				A94CA5CF1D13F7D000DA403C /* Info.plist */,
+				A94CA5C71D13F7D000DA403C /* Supporting Files */,
+			);
+			path = "Fir-OSX";
+			sourceTree = "<group>";
+		};
+		A94CA5C71D13F7D000DA403C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94CA5C81D13F7D000DA403C /* main.m */,
+				A94CA5DD1D141A0100DA403C /* Fir-OSX-PrefixHeader.pch */,
+				A9A84C161D1572D500EB85CD /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A94CA5D51D14199700DA403C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A94CA5D61D14199700DA403C /* MBProgressHUD.h */,
+				A94CA5D71D14199700DA403C /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A94CA5D91D1419B500DA403C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A94CA5DA1D1419C700DA403C /* FRAPI.h */,
+				A94CA5DB1D1419C700DA403C /* FRAPI.m */,
+				A94CA5DE1D14232800DA403C /* FRAPI+APP.h */,
+				A94CA5DF1D14232800DA403C /* FRAPI+APP.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A94CA5E11D142DB300DA403C /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				A96016C71D191F1200D57194 /* Cell */,
+				A94CA5E21D142DCF00DA403C /* FRDragView.h */,
+				A94CA5E31D142DCF00DA403C /* FRDragView.m */,
+				A9A84C071D155E1300EB85CD /* FRToast.h */,
+				A9A84C081D155E1300EB85CD /* FRToast.m */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		A96016C71D191F1200D57194 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A96016C81D191F2F00D57194 /* FRAppListCell.h */,
+				A96016C91D191F2F00D57194 /* FRAppListCell.m */,
+				A96016CB1D191F7F00D57194 /* FRAppListCell.xib */,
+				A96017621D199AA600D57194 /* FRUserListCell.h */,
+				A96017631D199AA600D57194 /* FRUserListCell.m */,
+				A96017651D199AAF00D57194 /* FRUserListCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		A96017221D195E1800D57194 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A96017231D195E3800D57194 /* QRCodeGenerator */,
+				A960175F1D1995EF00D57194 /* NSString+Trim.h */,
+				A96017601D1995EF00D57194 /* NSString+Trim.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A96017231D195E3800D57194 /* QRCodeGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				A96017391D195E3800D57194 /* QRCodeGenerator.h */,
+				A960173A1D195E3800D57194 /* QRCodeGenerator.m */,
+			);
+			path = QRCodeGenerator;
+			sourceTree = "<group>";
+		};
+		A9910B211D1806FD00DE9652 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				A9910B221D18070A00DE9652 /* FRApp.h */,
+				A9910B231D18070A00DE9652 /* FRApp.m */,
+				A9910B251D181D6C00DE9652 /* FRCert.h */,
+				A9910B261D181D6C00DE9652 /* FRCert.m */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
+		A9A84BDA1D1537BA00EB85CD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A9A84BDB1D1537D900EB85CD /* FRUserManager.h */,
+				A9A84BDC1D1537D900EB85CD /* FRUserManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A9A84BDE1D153BAA00EB85CD /* Analyse */ = {
+			isa = PBXGroup;
+			children = (
+				A942A46F1D170F7600E54A12 /* tools.bundle */,
+				A9A84BFF1D154D8A00EB85CD /* STAndroidPackage.h */,
+				A9A84C001D154D8A00EB85CD /* STAndroidPackage.m */,
+				A9A84C011D154D8A00EB85CD /* STIosPackage.h */,
+				A9A84C021D154D8A00EB85CD /* STIosPackage.m */,
+			);
+			path = Analyse;
+			sourceTree = "<group>";
+		};
+		A9A84C0B1D15623500EB85CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9910B211D1806FD00DE9652 /* Net */,
+				A9A84C0F1D1562EF00EB85CD /* FRUser.h */,
+				A9A84C101D1562EF00EB85CD /* FRUser.m */,
+				A91EE39D1D184C0F0071D6A9 /* FRUploadFile.h */,
+				A91EE39E1D184C0F0071D6A9 /* FRUploadFile.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0487CB2F53E181281F16585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A960174D1D1964B100D57194 /* libiconv.tbd */,
+				A960174B1D1964AB00D57194 /* QuartzCore.framework */,
+				A96017491D1964A700D57194 /* CoreVideo.framework */,
+				A96017471D1964A400D57194 /* CoreMedia.framework */,
+				A96017451D19649F00D57194 /* AVFoundation.framework */,
+				76D1F8DAA2B7C8096EF995CD /* libPods-Fir-OSX.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A94CA5C01D13F7D000DA403C /* Fir-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94CA5D21D13F7D000DA403C /* Build configuration list for PBXNativeTarget "Fir-OSX" */;
+			buildPhases = (
+				851FDF444083B0173B4385DD /* 📦 Check Pods Manifest.lock */,
+				A94CA5BD1D13F7D000DA403C /* Sources */,
+				A94CA5BE1D13F7D000DA403C /* Frameworks */,
+				A94CA5BF1D13F7D000DA403C /* Resources */,
+				DABD016362E9B5C04E3887E1 /* 📦 Embed Pods Frameworks */,
+				02D02D1ADC2EC88D3C35C985 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fir-OSX";
+			productName = "Fir-OSX";
+			productReference = A94CA5C11D13F7D000DA403C /* Fir-OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A94CA5B91D13F7D000DA403C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = slightech;
+				TargetAttributes = {
+					A94CA5C01D13F7D000DA403C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Q92S3ND59P;
+					};
+				};
+			};
+			buildConfigurationList = A94CA5BC1D13F7D000DA403C /* Build configuration list for PBXProject "Fir-OSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = A94CA5B81D13F7D000DA403C;
+			productRefGroup = A94CA5C21D13F7D000DA403C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A94CA5C01D13F7D000DA403C /* Fir-OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A94CA5BF1D13F7D000DA403C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A942A4701D170F7600E54A12 /* tools.bundle in Resources */,
+				A92C6B171D17CEB400974880 /* FRDonateAlert.xib in Resources */,
+				A96017661D199AAF00D57194 /* FRUserListCell.xib in Resources */,
+				A9A84C141D1572D500EB85CD /* Localizable.strings in Resources */,
+				A94CA5CB1D13F7D000DA403C /* Assets.xcassets in Resources */,
+				A96017531D19671C00D57194 /* FRAppQRCodeAlert.xib in Resources */,
+				A94CA5CE1D13F7D000DA403C /* MainMenu.xib in Resources */,
+				A96016CC1D191F7F00D57194 /* FRAppListCell.xib in Resources */,
+				A96016B21D191C2C00D57194 /* FRUserManagerAlert.xib in Resources */,
+				A960175B1D198D3A00D57194 /* FRNewUserAlert.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02D02D1ADC2EC88D3C35C985 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fir-OSX/Pods-Fir-OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		851FDF444083B0173B4385DD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DABD016362E9B5C04E3887E1 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fir-OSX/Pods-Fir-OSX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A94CA5BD1D13F7D000DA403C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91EE39F1D184C0F0071D6A9 /* FRUploadFile.m in Sources */,
+				A9A84BDD1D1537D900EB85CD /* FRUserManager.m in Sources */,
+				A96017561D196B3300D57194 /* FRBaseAlert.m in Sources */,
+				A96016CF1D1921F600D57194 /* FRMainWindow.m in Sources */,
+				A9A84C051D154D8A00EB85CD /* STAndroidPackage.m in Sources */,
+				A94CA5E01D14232800DA403C /* FRAPI+APP.m in Sources */,
+				A92C6B161D17CEB400974880 /* FRDonateAlert.m in Sources */,
+				A9A84C091D155E1300EB85CD /* FRToast.m in Sources */,
+				A94CA5DC1D1419C700DA403C /* FRAPI.m in Sources */,
+				A96017511D19670E00D57194 /* FRAppQRCodeAlert.m in Sources */,
+				A94CA5C91D13F7D000DA403C /* main.m in Sources */,
+				A94CA5D81D14199700DA403C /* MBProgressHUD.m in Sources */,
+				A96016B01D191C1600D57194 /* FRUserManagerAlert.m in Sources */,
+				A94CA5E41D142DCF00DA403C /* FRDragView.m in Sources */,
+				A96017641D199AA600D57194 /* FRUserListCell.m in Sources */,
+				A9910B271D181D6C00DE9652 /* FRCert.m in Sources */,
+				A9A84C061D154D8A00EB85CD /* STIosPackage.m in Sources */,
+				A96017441D195E3800D57194 /* QRCodeGenerator.m in Sources */,
+				A9A84C111D1562EF00EB85CD /* FRUser.m in Sources */,
+				A96017591D198D2D00D57194 /* FRNewUserAlert.m in Sources */,
+				A9910B241D18070A00DE9652 /* FRApp.m in Sources */,
+				A96017611D1995EF00D57194 /* NSString+Trim.m in Sources */,
+				A96016CA1D191F2F00D57194 /* FRAppListCell.m in Sources */,
+				A94CA5C61D13F7D000DA403C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A94CA5CC1D13F7D000DA403C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94CA5CD1D13F7D000DA403C /* Base */,
+				A9A84C181D1572E100EB85CD /* zh-Hans */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A9A84C161D1572D500EB85CD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A84C151D1572D500EB85CD /* Base */,
+				A9A84C171D1572D700EB85CD /* en */,
+				A9A84C191D1572E100EB85CD /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A94CA5D01D13F7D000DA403C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A94CA5D11D13F7D000DA403C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A94CA5D31D13F7D000DA403C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30DEBD14E89E862186C84FB /* Pods-Fir-OSX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREFIX_HEADER = "Fir-OSX/Fir-OSX-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					HAVE_CONFIG_H,
+				);
+				INFOPLIST_FILE = "Fir-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slightech.Fir-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A94CA5D41D13F7D000DA403C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B61583E8A99A830134A37F13 /* Pods-Fir-OSX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PREFIX_HEADER = "Fir-OSX/Fir-OSX-PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					HAVE_CONFIG_H,
+				);
+				INFOPLIST_FILE = "Fir-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slightech.Fir-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A94CA5BC1D13F7D000DA403C /* Build configuration list for PBXProject "Fir-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94CA5D01D13F7D000DA403C /* Debug */,
+				A94CA5D11D13F7D000DA403C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94CA5D21D13F7D000DA403C /* Build configuration list for PBXNativeTarget "Fir-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94CA5D31D13F7D000DA403C /* Debug */,
+				A94CA5D41D13F7D000DA403C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A94CA5B91D13F7D000DA403C /* Project object */;
+}

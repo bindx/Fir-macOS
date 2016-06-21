@@ -1,0 +1,64 @@
+//
+//  Fir-OSX-PrefixHeader.pch
+//  Fir-OSX
+//
+//  Created by gejw on 16/6/17.
+//  Copyright © 2016年 slightech. All rights reserved.
+//
+
+#pragma 单例宏定义
+
+#ifndef qontact_Singleton_h
+#define qontact_Singleton_h
+
+//http://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/nsobject_Class/Reference/Reference.html#//apple_ref/occ/clm/NSObject/initialize
+
+#define SingletonInterface(Class) \
++ (Class *)sharedInstance;
+
+
+#define SingletonImplementation(Class) \
+static Class *__ ## sharedSingleton; \
+\
+\
++ (void)initialize \
+{ \
+static BOOL initialized = NO; \
+if(!initialized) \
+{ \
+initialized = YES; \
+__ ## sharedSingleton = [[Class alloc] init]; \
+} \
+} \
+\
+\
++ (Class *)sharedInstance \
+{ \
+return __ ## sharedSingleton; \
+} \
+\
+
+#endif
+
+
+#ifndef Fir_OSX_PrefixHeader_pch
+#define Fir_OSX_PrefixHeader_pch
+
+#define FRUpdateUserNotification @"FRUpdateUserNotification"
+
+#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+
+#import <PVAsyncImageView.h>
+#import <MJExtension.h>
+#import <Objective-Zip.h>
+#import "NSString+Trim.h"
+
+#import "FRToast.h"
+#import "FRAPI.h"
+#import "FRAPI+APP.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Fir_OSX_PrefixHeader_pch */
